@@ -1,7 +1,14 @@
-import { useState } from 'react'
+import Link from 'next/link';
 
 const Home = () => {
-    return <h1>Página Inicial</h1>
+    return (
+        <div>
+            <h1>Home</h1>
+            <Link href="/sobre">
+                <a>Acessar Pagina Sobre</a>
+            </Link>
+        </div>
+    )
 }
 
 export default Home;
